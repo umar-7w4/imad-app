@@ -32,13 +32,13 @@ content : `
             <p> Miss-undersatnding and being Miss-understand by others.</p>`
 };
 
-function createtemplate (date) {
+function createTemplate (date) {
     var title = data.title;
-    var date = data.date;
+    vardate = data.date;
     var heading = data.heading;
     var content = data.content;
 }
-var htmltemplate = `<html style="
+var htmlTemplate = `<html style="
     background-color: #cce4ce;
     background-color: #f7eaee;
     background-color: #2c99a7;
@@ -96,8 +96,8 @@ var htmltemplate = `<html style="
       </div> 
       </body>
       </html>
-      `;
- return htmltemplate;
+`;
+     return htmlTemplate; 
  }
  
 app.get('/', function (req, res) {
@@ -133,3 +133,5 @@ var port = 80;
 app.listen(port, function () {
   console.log(`IMAD course app listening on port ${port}!`);
 });
+
+
