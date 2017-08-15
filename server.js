@@ -96,7 +96,7 @@ var htmlTemplate = `<html style="
       </div> 
       </body>
       </html>
-
+`;
      return htmlTemplate; 
  }
  
