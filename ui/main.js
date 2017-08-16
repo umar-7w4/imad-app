@@ -4,7 +4,7 @@ console.log('Loaded!');
 var img = document.getElementById("mohammad umar");
 var marginleft = 10;
 function marginright () {
-    marginleft = marginleft + 10;
+    marginleft = marginleft + 100;
     img.style.marginleft = marginleft + "px";
 }
 img.onclick= function () {
