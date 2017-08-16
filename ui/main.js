@@ -2,11 +2,11 @@ console.log('Loaded!');
 
 // move image
 var img = document.getElementById("mohammad umar");
-var marginleft = 10;
+var marginleft = 0;
 function marginright () {
-    marginleft = marginleft + 100;
+    marginleft = marginleft + 5;
     img.style.marginleft = marginleft + "px";
 }
 img.onclick= function () {
-    var interval = setInterval(moveright ,1000);
+    var interval = setInterval(moveright ,50);
 };
