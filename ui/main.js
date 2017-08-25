@@ -1,12 +1,14 @@
-console.log('Loaded!');
+// counter code
+var button= document .grtElementById('counter');
+var button = 0;
 
-// move image
-var img = document.getElementById("mohammad umar");
-var marginleft = 0;
-function marginright () {
-    marginleft = marginleft + 5;
-    img.style.marginleft = marginleft + "px";
-}
-img.onclick= function () {
-    var interval = setInterval(moveright ,50);
-};
+button.onclick = function () {
+     // make a request to the counter endpoin
+     
+     // capture the response and store it in the variable
+     
+     // render the variable in the correct span
+     counter = counter+1;
+     var span=document.getElementById ('count');
+     span.innerHTML = counter.toString();
+}; 
