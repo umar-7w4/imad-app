@@ -4,12 +4,22 @@ var counter = 0;
 
 button.onclick = function () {
     
-     // make a request to the counter endpoint
+     // create a request object
+     var request= new XMLhttpRequest();
      
      // capture the response and store it in the variable
-     
-     // render the variable in the correct span
-     counter = counter +1;
-     var span = document.getElementById('count');
+     request.onreadystatechange = function () {
+         // take some action
+         if ( request.status === 200) {
+             var counter= request.response.text;
+              var span = document.getElementById('count');
      span.innerHTML = counter.toString();
+         }
+     };
+     // not done yet
 }; 
+
+// make a request
+request.open('GET', 'http://mohammadumar7w4.imad.hasura-app.io/',true);
+request.send(null);
+
