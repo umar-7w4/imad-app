@@ -1,6 +1,6 @@
 // counter code
 var button= document.getElementById('counter');
-var button = 0;
+var counter = 0;
 
 button.onclick = function () {
     
