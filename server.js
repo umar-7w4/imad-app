@@ -44,7 +44,7 @@ app.get('/ui/madi.png', function (req, res) {
 
 
 var names = [];
-app.get('/submit-name/:name' , function(req, res) { // /submit-name?name=xxxx 
+app.get('/submit-name/:name' , function(req, res) { 
     // Get the name from request 
     var name = req.params.name;
     
