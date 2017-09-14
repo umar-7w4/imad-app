@@ -19,7 +19,7 @@ app.get("/counter", function (req, res) {
 var names = [];
 app.get('/submit-name/:name' , function(req, res) { // /submit-name?name=xxxx 
     // Get the name from request 
-    var name = req.parans.name;
+    var name = req.params.name;
     
     names.push(name);
     // JSON: Javascript Object Notation
