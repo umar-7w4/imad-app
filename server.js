@@ -43,12 +43,12 @@ app.get('/ui/madi.png', function (req, res) {
 });
 
 var names = [];
-app.get("/submit-name/:name", function(req, res){ 
-    // get the name from request object
-    var name = re.parans.name;
+app.get('/submit-name/:name' , function(req, res) { 
+    // Get the name from request 
+    var name = req.parans.name;
     
     names.push(name);
-    // JSON: Javascript object notation
+    // JSON: Javascript Object Notation
     res.send(JSON.stringify(names)); 
 });
 
